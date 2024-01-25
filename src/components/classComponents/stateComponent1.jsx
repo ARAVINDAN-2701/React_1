@@ -1,4 +1,5 @@
 import React from "react";
+import "../../css/propComponent.css"
 
 class State2cmp extends React.Component{
     constructor(){
@@ -13,7 +14,7 @@ class State2cmp extends React.Component{
     }
     render(){
         return(
-            <div>
+            <div className="statecomp">
                 <p>{this.State.type}, using ,{this.State.state}</p>
                 <p>the name is changed to{this.State.type} to {this.chState()}</p>
                 <button onMouseOver ={this.chState}>Click me to change the type state</button>

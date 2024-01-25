@@ -1,0 +1,9 @@
+ol{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    list-style-type: none;
+    background-color: rgb(57, 200, 232);
+    color: aliceblue;
+    margin: 0%;
+}
