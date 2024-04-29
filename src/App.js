@@ -1,10 +1,14 @@
 // import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/functionalComponents/Navbar';
+// import Footbar from './components/functionalComponents/Footbar';
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import About from './components/functionalComponents/About';
 import Experence from './components/functionalComponents/Experience';
-import Login from './components/functionalComponents/Login';
+
+import Home from './components/functionalComponents/Home';
+
+import Memo from './components/functionalComponents/memo';
 // import Test from './components/functionalComponents/testComponents';
 // import TestClassComp from './components/classComponents/testClassComponent';
 // import Propcomp from './components/functionalComponents/propsComponent';
@@ -20,13 +24,16 @@ function App() {
       <BrowserRouter>
       <Navbar/>
       <Routes>
-        <Route path='/'></Route>
+        <Route path='/' element={<Home/>}></Route>
         <Route path='/about' element={<About/>}></Route>
-        <Route path='/experience' element={<Experence/>}></Route>
-        <Route path='/login' element={<Login/>}></Route>
+        <Route path='/exper' element={<Experence/>}></Route> 
+      
+        <Route path='/memo' element={<Memo/>}></Route>
+        
       </Routes>
+      {/* <Footbar/> */}
       </BrowserRouter>
-      <h1>HOME PAGE</h1>
+      
       
       
     </div>
